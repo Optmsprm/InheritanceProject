@@ -3,14 +3,16 @@
 #ifndef CAR
 #define CAR
 
-class Car
+#include "Vehicle.cpp"
+
+class Car : Vehicle
 {
 private:
 	int numDoors;
 public:
 	Car();
 	int getNumDoors();
-	int setNumDoors(int replace);
+	void setNumDoors(int replace);
 	void displayInfo();
 };
 
