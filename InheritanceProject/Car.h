@@ -12,7 +12,7 @@ private:
 public:
 	Car();
 	int getNumDoors();
-	void setNumDoors(int replace);
+	void setNumDoors(int);
 	void displayInfo();
 };
 
