@@ -81,5 +81,47 @@ int main()
     userCar.setNumDoors(tempInt);
     userCar.displayInfo();
     cout << endl << endl;
+
+    cout << "Truck: " << endl;
+    cout << "Enter the manufacturer: ";
+    cin.ignore();
+    getline(cin, tempStr);
+    userTruck.setManufacturer(tempStr);
+    while (true)
+    {
+        cout << "Enter the year built: ";
+        cin >> tempInt;
+        if (!cin.good() || to_string(tempInt).length() != 4)
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid Choice" << endl;
+        }
+        else
+        {
+            break;
+        }
+    }
+    userTruck.setYearBuilt(tempInt);
+    while (true)
+    {
+        cout << "Enter the towing capacity: ";
+        cin >> tempInt;
+        if (!cin.good() || tempInt < 0)
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid Choice" << endl;
+        }
+        else
+        {
+            break;
+        }
+    }
+    userTruck.setTowingCap(tempInt);
+    userTruck.displayInfo();
+    cout << endl;
+
+    return 0;
 }
 
