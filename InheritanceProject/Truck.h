@@ -5,7 +5,7 @@
 
 #include "Vehicle.h"
 
-class Truck : Vehicle
+class Truck : public Vehicle
 {
 private:
 	int towingCap;

@@ -5,7 +5,7 @@
 
 #include "Vehicle.h"
 
-class Car : Vehicle
+class Car : public Vehicle
 {
 private:
 	int numDoors;
