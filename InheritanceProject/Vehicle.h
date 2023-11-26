@@ -15,8 +15,8 @@ public:
 	Vehicle();
 	string getManufacturer() const;
 	int getYearBuilt() const;
-	void setManufacturer(string replace);
-	void setYearBuilt(int replace);
+	void setManufacturer(string);
+	void setYearBuilt(int);
 	void displayInfo();
 };
 
