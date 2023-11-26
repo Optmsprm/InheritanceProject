@@ -3,7 +3,7 @@
 #ifndef TRUCK
 #define TRUCK
 
-#include "Vehicle.cpp"
+#include "Vehicle.h"
 
 class Truck : Vehicle
 {

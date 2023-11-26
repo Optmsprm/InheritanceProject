@@ -1,5 +1,6 @@
 
 #include "Truck.h"
+#include <iostream>
 
 Truck::Truck()
 {
